@@ -1,35 +1,36 @@
 /**
 * @author ltj
-* @since  2022/11/26 16:25
+* @since  2022/11/26 18:50
 */
 
+
 <template>
-  <div class="apk">
+  <div class="tool">
     <div class="body">
 
     </div>
 
     <div class="bottom">
       <a-button id="two" class="btn" @click="next">继续</a-button>
-      <a-button id="one" class="btn" @click="cancel">取消</a-button>
+      <a-button id="one" class="btn" @click="back">返回</a-button>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'APK',
-  emits:['next','one','cancel'],
+  name: 'Tool',
+  emits:['next','back','two'],
   data(){
     return{}
   },
   methods:{
     next(){
-      this.$emit('one')
+      this.$emit('two')
       this.$emit('next')
     },
-    cancel(){
-      this.$emit('cancel')
+    back(){
+      this.$emit('back')
     }
   }
 }

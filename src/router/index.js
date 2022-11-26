@@ -4,7 +4,7 @@ import Login from '../views/Login'
 import Choice from '../views/Choice'
 import Running from '../views/Running'
 import Result from '../views/Result'
-import Path from '../views/Path'
+import Fun from '../views/Fun'
 
 const routes = [
   {
@@ -13,9 +13,9 @@ const routes = [
     component: Home,
     children: [
       {
-        path: '',
-        name: 'Path',
-        component: Path
+        path: 'fun',
+        name: 'Fun',
+        component: Fun
       },
       {
         path: 'choice',
@@ -41,7 +41,7 @@ const routes = [
   },
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/home/fun'
   }
 ]
 

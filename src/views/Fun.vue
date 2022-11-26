@@ -5,7 +5,7 @@
 
 
 <template>
-  <div class="path">
+  <div class="fun">
 
     <div class="btn">
       <a-button id="one" @click="toUpload">上传文件</a-button>
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'path',
+  name: 'fun',
   data () {
     return {}
   },
