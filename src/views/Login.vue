@@ -4,12 +4,24 @@
 */
 
 <template>
-  <div>hihihihihi</div>
+  <div>
+
+    <p @click="go">hihihihihi</p>
+  </div>
+
 </template>
 
 <script>
 export default {
-  name: 'Login'
+  name: 'Login',
+  data () {
+    return {}
+  },
+  methods: {
+    go () {
+      this.$router.push('/home')
+    }
+  }
 }
 </script>
 
