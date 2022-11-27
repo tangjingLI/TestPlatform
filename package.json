@@ -11,6 +11,8 @@
     "@ant-design/icons-vue": "^6.1.0",
     "ant-design-vue": "^3.2.14",
     "core-js": "^3.6.5",
+    "lib-flexible-computer": "^1.0.2",
+    "postcss-px2rem": "^0.3.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vue3-eventbus": "^2.0.0",
@@ -22,7 +24,8 @@
     "@vue/cli-plugin-router": "~4.5.15",
     "@vue/cli-plugin-vuex": "~4.5.15",
     "@vue/cli-service": "~4.5.15",
-    "@vue/compiler-sfc": "^3.0.0"
+    "@vue/compiler-sfc": "^3.0.0",
+    "px2rem-loader": "^0.1.9"
   },
   "eslintConfig": {
     "root": true,

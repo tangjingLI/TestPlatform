@@ -38,7 +38,17 @@
     <div class="right">
 
       <div class="top">
-        <a-button class="btn" @click="" danger>取消测试</a-button>
+
+        <a-popconfirm
+          title="确定要取消测试吗?"
+          ok-text="Yes"
+          cancel-text="No"
+          @confirm="cancel"
+          @cancel=""
+        >
+          <a-button class="btn" @click="" danger>取消测试</a-button>
+
+        </a-popconfirm>
 
         <div id="timeBar">
           <vue3-flip-countdown
@@ -46,10 +56,10 @@
             :deadlineDate="timer"
             :mainColor="'white'"
             :secondFlipColor="'white'"
-            :countdownSize="'2rem'"
+            :countdownSize="'30px'"
             :mainFlipBackgroundColor="'#517661'"
             :secondFlipBackgroundColor="'#517661'"
-            :showLabels="true"
+            :showLabels="false"
             :showDays="false"
             @timeElapsed="timeOut"/>
         </div>
@@ -87,6 +97,9 @@ export default {
       this.timer.setMinutes(this.timer.getMinutes() + this.allTime)
       console.log(this.timer)
     },
+    cancel(){
+      this.$router.push('/home/fun')
+    }
   },
   created () {
     this.getTime()
@@ -115,14 +128,14 @@ export default {
   /*border: #42b983 2px solid;*/
   background-color: #8cb2d4;
   margin-bottom: 10px;
-  height: 260px;
+  height: 430px;
   width: 100%;
   float: left;
 }
 
 .command {
   /*border: #42b983 2px solid;*/
-  height: 300px;
+  height: 430px;
   float: left;
   width: 100%;
   background-color: #2d2d2d;
@@ -150,11 +163,11 @@ export default {
   width: 100%;
   float: left;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .video {
-  height: 450px;
+  height: 780px;
   width: 100%;
   background-color: #7d9787;
   float: left;
@@ -164,9 +177,10 @@ export default {
   float: right;
   /*height: 30px;*/
   /*width: 80px;*/
+  /*font-size: 15px;*/
   font-weight: bold;
-  margin-top: 20px;
-  /*margin-right: 10px;*/
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 #timeBar {

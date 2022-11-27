@@ -58,7 +58,7 @@ export default {
 
 .body {
   text-align: center;
-  height: 450px;
+  height: 745px;
   padding: 10px 0;
 }
 

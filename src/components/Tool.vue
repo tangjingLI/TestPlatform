@@ -39,7 +39,7 @@ export default {
 <style scoped>
 .body {
   text-align: center;
-  height: 450px;
+  height: 745px;
   padding: 30px 0;
 }
 
