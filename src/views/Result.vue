@@ -30,7 +30,7 @@ export default {
 <style scoped>
 
 .body {
-  height: 885px;
+  height: 530px;
 }
 
 .bottom {

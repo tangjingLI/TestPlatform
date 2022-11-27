@@ -40,7 +40,7 @@ export default {
 }
 
 .btn {
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 #one {
@@ -50,7 +50,7 @@ export default {
   color: white;
   border: 1px solid #67b3f6;
   border-radius: 70px;
-  margin-right: 100px;
+  margin-right: 70px;
   font-size: 30px;
   box-shadow: 2px 2px 10px #939393;
 }
@@ -62,7 +62,7 @@ export default {
   color: white;
   border: 1px solid #75d0a9;
   border-radius: 70px;
-  margin-left: 100px;
+  margin-left: 70px;
   font-size: 30px;
   box-shadow: 2px 2px 10px #939393;
 }

@@ -92,17 +92,15 @@ export default {
 
 <style scoped>
 .choice {
-  border-bottom: #42b983 2px dashed;
   /*overflow-y: scroll;*/
   width: 100%;
 }
 
 .percent {
   /*border: solid 2px #8080de;*/
-  height: 100px;
-  padding-top: 30px;
-  padding-left: 200px;
-  padding-right: 200px;
+  height: 20%;
+  padding: 20px 200px;
+  border-bottom: #42b983 2px dashed;
 }
 
 #step {
@@ -111,7 +109,9 @@ export default {
 }
 
 .body {
-  height: 760px;
+  height: 50%;
+  /*border: #42b983 2px solid;*/
+
   /*border-bottom: #42b983 2px solid;*/
 
 }

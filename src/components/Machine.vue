@@ -7,7 +7,7 @@
 <template>
   <div>
     <div class="body">
-
+      machine
     </div>
 
     <div class="bottom">
@@ -21,16 +21,16 @@
 <script>
 export default {
   name: 'Machine',
-  emits:['next','back','three'],
-  data(){
-    return{}
+  emits: ['next', 'back', 'three'],
+  data () {
+    return {}
   },
-  methods:{
-    next(){
+  methods: {
+    next () {
       this.$emit('three')
       this.$emit('next')
     },
-    back(){
+    back () {
       this.$emit('back')
     }
   }
@@ -40,7 +40,8 @@ export default {
 <style scoped>
 .body {
   text-align: center;
-  height: 760px;
+  height: 450px;
+  padding: 30px 0;
 }
 
 
@@ -50,10 +51,10 @@ h1 {
 }
 
 .bottom {
-  height: 80px;
+  height: 60px;
   /*border: #42b983 2px solid;*/
   background-color: #cbe7d9;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .btn {

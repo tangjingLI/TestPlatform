@@ -7,16 +7,16 @@
 <template>
   <div>
     <div class="body">
-      <div class="time">
-        <h1>选择测试运行时间（分钟）</h1>
+      <div class="item">
+        <h1 style="margin-bottom: 30px">选择测试运行时间（分钟）</h1>
         <a-slider :min="0" :max="120" :value="time" @change="handleChange"/>
       </div>
 
-      <div class="time">
+      <div class="item">
         <h1>选择统计覆盖率的方式</h1>
       </div>
 
-      <div class="time">
+      <div class="item">
         <h1>选择bug的过滤粒度</h1>
       </div>
 
@@ -58,13 +58,14 @@ export default {
 
 .body {
   text-align: center;
-  height: 760px;
+  height: 450px;
+  padding: 10px 0;
 }
 
-.time {
+.item {
   width: 70%;
-  padding-top: 100px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 h1 {
@@ -73,10 +74,10 @@ h1 {
 }
 
 .bottom {
-  height: 80px;
+  height: 60px;
   /*border: #42b983 2px solid;*/
   background-color: #cbe7d9;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .btn {

@@ -8,7 +8,7 @@
       <h1 id="user">欢迎用户123456</h1>
     </div>
 
-    <router-view style="height: 935px;padding: 0"></router-view>
+    <router-view style="height:90%;padding: 0"></router-view>
   </div>
 </template>
 
