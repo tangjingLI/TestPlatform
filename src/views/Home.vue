@@ -35,6 +35,7 @@ export default {
 </script>
 
 <style scoped>
+
 .top {
   padding: 0;
   height: 50px;

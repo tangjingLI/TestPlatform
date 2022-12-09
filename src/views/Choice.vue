@@ -8,7 +8,7 @@
 
     <div class="percent">
       <a-steps :current=percent id="step">
-        <a-step title="选择APK"/>
+        <a-step title="选择APP"/>
         <a-step title="选择工具"/>
         <a-step title="选择虚拟机"/>
         <a-step title="其他配置"/>
@@ -73,10 +73,10 @@ export default {
       this.percent = this.percent - 1
     },
     handleOne (val) {
-
+      console.log('apk',val)
     },
     handleTwo (val) {
-
+      console.log('tool',val)
     },
     handleThree (val) {
 
@@ -103,9 +103,8 @@ export default {
   border-bottom: #42b983 2px dashed;
 }
 
-#step {
-  font-size: 20px;
-  font-weight: bold;
+/deep/.ant-steps-item-title {
+  font-size: 18px;
 }
 
 .body {
